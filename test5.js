@@ -16,15 +16,22 @@ function searchTest(driver) {
   driver.findElement(By.className('user-title')).sendKeys('plz');
   driver.findElement(By.className('user-body')).sendKeys('work');
   driver.findElement(By.className('save-button')).click();
+  driver.findElement(By.className('delete-button')).click();
 
   driver.sleep(3000).then(function() {
-    // driver.findElement(By.className('')).then(function(title) {
-      if(title === 'plz') {
-        console.log('Test passed');
-      } else {
-        console.log('Test failed');
-      }
-    });
+    var tryAgain = expect(browser.isElementPresent(element(By.className('body-text')))).toBe(false);
+    if (tryAgain = false) {
+      console.log('test passed')
+    } else {
+      console.log('test failed damnit')
+    }
+    // driver.findElement(By.className('body-text')).then(function(text) {
+    //   if() {
+    //     console.log('Test passed');
+    //   } else {
+    //     console.log('Test failed');
+    //   }
+    // });
   });
 
   driver.quit();

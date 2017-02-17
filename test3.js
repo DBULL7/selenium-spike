@@ -18,8 +18,8 @@ function searchTest(driver) {
   driver.findElement(By.className('save-button')).click();
 
   driver.sleep(3000).then(function() {
-    // driver.findElement(By.className('')).then(function(title) {
-      if(title === 'plz') {
+    // driver.findElement(By.className('')).then(function(text) {
+      if(text === 'work') {
         console.log('Test passed');
       } else {
         console.log('Test failed');
