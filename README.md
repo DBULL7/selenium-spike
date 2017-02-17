@@ -1,6 +1,5 @@
 # Selenium Spike
 
-***
 
 Step 1: Go to github.com/DBULL7/selenium-spike and clone it down
 
@@ -47,5 +46,4 @@ function searchTest(driver) {
 Step 6: In the terminal run `node test1.js` Chrome should open, run enter 'webdriver' and click it. From there it should close and give you a `Test passed` in the terminal
 
 
-##Next Up
-***
+##Next Up test2.js
